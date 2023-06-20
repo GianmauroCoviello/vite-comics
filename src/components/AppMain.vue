@@ -1,9 +1,11 @@
+<!-- parte logica (javascript) -->
 <script>
 export default {
     
 }
 </script>
 
+<!-- parte grafica (html) -->
 <template lang="">
     <main>
         <div class="container">
@@ -42,7 +44,8 @@ export default {
     </main>
 </template>
 
-<style lang="scss" scoped>
+<!-- parte style (css/scss) -->
+<style lang="scss" scoped> // inserito SASS allo style e inserito anche lo scope
     .container{
         background-color: black;
         height: 100px;

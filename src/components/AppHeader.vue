@@ -1,8 +1,11 @@
+<!-- parte logica (javascript) -->
 <script>
 export default {
     
 }
 </script>
+
+<!-- parte grafica (html) -->
 <template lang="">
     <header>
         <div class="row">
@@ -17,7 +20,8 @@ export default {
     </header>
 </template>
 
-<style lang="scss" scoped>
+<!-- parte style (css/scss) -->
+<style lang="scss" scoped> // inserito SASS allo style e inserito anche lo scope
     header{
         height: 100px;
         background-color: red;

@@ -1,9 +1,11 @@
+<!-- parte logica (javascript) -->
 <script>
 export default {
     
 }
 </script>
 
+<!-- parte grafica (html) -->
 <template lang="">
     <footer>
         <div class="container-top-footer">
@@ -76,7 +78,8 @@ export default {
     </footer>
 </template>
 
-<style lang="scss" scoped>
+<!-- parte style (css/scss) -->
+<style lang="scss" scoped> // inserito SASS allo style e inserito anche lo scope
     .container-top-footer{
         background-image: url('../assets/img/footer-bg.jpg');
         padding: 20px 0;
