@@ -4,22 +4,21 @@ export default {
 }
 </script>
 <template lang="">
-    <div class="container_header">
+    <header>
         <div class="row">
             <div class="col-logo">
-                
+                        
 
             </div>
             <div class="col-menu">
-                
+                        
             </div>
         </div>
-        
-    </div>
+    </header>
 </template>
 
 <style lang="scss" scoped>
-    .container_header{
+    header{
         height: 100px;
         background-color: red;
 
