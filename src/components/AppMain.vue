@@ -1,29 +1,33 @@
 <!-- parte logica (javascript) -->
 <script>
 export default {
-    // data(){
-    //     return{
-    //         itemCard: [
-    //             {   
-    //                 nome: 'DIGITAL COMICS',
-    //             },
-    //             {
-    //                 nome: 'DC MERCHANDISE',
-    //             },
-    //             {
-
-    //                 nome: 'SUBSCRIPTION',
-    //             },
-    //             {
-    //                 nome: 'COMIC SHOP LOCATOR',
-    //             },
-    //             {
-    //                 nome: 'DC POWER VISA',
-    //             },
+    data(){
+        return{
+            itemCard: [
+                {   
+                    src_image: '../src/assets/img/buy-comics-digital-comics.png',
+                    nome: 'DIGITAL COMICS',
+                },
+                {
+                    src_image: '../src/assets/img/buy-comics-merchandise.png',
+                    nome: 'DC MERCHANDISE',
+                },
+                {
+                    src_image: '../src/assets/img/buy-comics-subscriptions.png',
+                    nome: 'SUBSCRIPTION',
+                },
+                {
+                    src_image: '../src/assets/img/buy-comics-shop-locator.png',
+                    nome: 'COMIC SHOP LOCATOR',
+                },
+                {
+                    src_image: '../src/assets/img/buy-dc-power-visa.svg',
+                    nome: 'DC POWER VISA',
+                },
                 
-    //         ]
-    //     }
-    // }
+            ]
+        }
+    }
     
 }
 </script>
@@ -42,12 +46,12 @@ export default {
         </div>
         <div class="container-menu">
             <div class="row-menu">
-                <div class="col-25">
-                    <img src="../assets/img/buy-comics-digital-comics.png" alt=""> 
-                    <p>DIGITAL COMICS</p>
+                <div class="col-25" v-for="(card,index) in itemCard">
+                    <img :src="card.src_image" alt=""> 
+                    <p>{{card.nome}}</p>
                     
                 </div>
-                <div class="col-25">
+                <!-- <div class="col-25">
                     <img src="../assets/img/buy-comics-merchandise.png" alt="">
                     <p>DC MERCHANDISE</p>
                     
@@ -67,7 +71,7 @@ export default {
                     <p>DC POWER VISA</p>
                     
                 </div>
-                
+                 -->
             </div>
         </div>
     </main>
@@ -116,11 +120,13 @@ export default {
             max-width: 1170px;
             margin: 0 auto;
             display: flex;
+            
 
             .col-25{
                 width: calc(100%/5);
                 color: white;
                 display: flex;
+                padding-left: 10px;
 
 
                 img{
@@ -133,11 +139,11 @@ export default {
                     padding:0 10px ;
                     font-size: 12px;
                 }
-                #svg-visa{
-                    // height: 30px;
-                    width: 60px;
+                // #svg-visa{
+                    
+                //     width: 60px;
 
-                }
+                // }
 
             }
         }
