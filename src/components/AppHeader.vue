@@ -61,7 +61,7 @@ export default {
 <!-- parte style (css/scss) -->
 <style lang="scss" scoped> // inserito SASS allo style e inserito anche lo scope
     header{
-        padding: 10px 0;
+        
         
 
         .row{
@@ -74,25 +74,37 @@ export default {
 
                 img{
                     width: 80px;
+                    padding: 15px 0;
                 }
                 
             }
             .col-menu{
-                width: 60%;
+                width: 70%;
                 display: flex;
                 align-items: center;
                 justify-content: flex-end;
+                
 
 
                 ul{
                     list-style-type: none;
                     display: flex;
+                    height: 100%;
+                    
+                    
                     
                     li{
-                        padding-right: 20px;
+                        margin-right: 20px;
+                        display: flex;
+                        align-items: center;
+                       
 
-                        &hover{
-                            background-color: aqua;
+                        
+                        
+
+                        &:hover{
+                            border-bottom: 4px solid blue;
+                            cursor: pointer;
                         }
                         
                     }

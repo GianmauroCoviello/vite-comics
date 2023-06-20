@@ -1,6 +1,29 @@
 <!-- parte logica (javascript) -->
 <script>
 export default {
+    // data(){
+    //     return{
+    //         itemCard: [
+    //             {   
+    //                 nome: 'DIGITAL COMICS',
+    //             },
+    //             {
+    //                 nome: 'DC MERCHANDISE',
+    //             },
+    //             {
+
+    //                 nome: 'SUBSCRIPTION',
+    //             },
+    //             {
+    //                 nome: 'COMIC SHOP LOCATOR',
+    //             },
+    //             {
+    //                 nome: 'DC POWER VISA',
+    //             },
+                
+    //         ]
+    //     }
+    // }
     
 }
 </script>
@@ -20,25 +43,31 @@ export default {
         <div class="container-menu">
             <div class="row-menu">
                 <div class="col-25">
-                    1
+                    <img src="../assets/img/buy-comics-digital-comics.png" alt=""> 
+                    <p>DIGITAL COMICS</p>
                     
                 </div>
                 <div class="col-25">
-                    2
+                    <img src="../assets/img/buy-comics-merchandise.png" alt="">
+                    <p>DC MERCHANDISE</p>
                     
                 </div>
                 <div class="col-25">
-                    3
+                    <img src="../assets/img/buy-comics-subscriptions.png" alt="">
+                    <p>SUBSCRIPTION</p>
                     
                 </div>
                 <div class="col-25">
-                    4
+                    <img src="../assets/img/buy-comics-shop-locator.png" alt="">
+                    <p>COMIC SHOP LOCATOR</p>
                     
                 </div>
                 <div class="col-25">
-                    5
+                    <img id="svg-visa" src="../assets/img/buy-dc-power-visa.svg" alt="">
+                    <p>DC POWER VISA</p>
                     
                 </div>
+                
             </div>
         </div>
     </main>
@@ -78,7 +107,7 @@ export default {
 
     .container-menu{
         background-color: rgb(58, 101, 242);
-        height: 100px;
+        padding: 40px 0;
 
 
 
@@ -90,6 +119,25 @@ export default {
 
             .col-25{
                 width: calc(100%/5);
+                color: white;
+                display: flex;
+
+
+                img{
+                    height: 60px;
+                    
+                
+                }
+                p{
+                    align-self: center;
+                    padding:0 10px ;
+                    font-size: 12px;
+                }
+                #svg-visa{
+                    // height: 30px;
+                    width: 60px;
+
+                }
 
             }
         }

@@ -52,11 +52,11 @@ export default {
         </div>
         <div class="container-end-footer">
             <div class="row">
-                <div class="col-50">
+                <div class="col-button">
                     <button>SIGN-UP NOW</button>
 
                 </div>
-                <div class="col-50">
+                <div class="col-social">
                     <h3>FOLLOW US</h3>
                     <img src="../assets/img/footer-facebook.png" alt="">
                     <img src="../assets/img/footer-periscope.png" alt="">
@@ -128,27 +128,41 @@ export default {
             display: flex;
 
 
-            .col-50{
+            .col-button{
                 width: 50%;
                 display: flex;
+               
 
 
                 button{
                     background-color: transparent;
-                    padding: 10px;
+                    padding: 15px;
                     border-color: rgb(5, 136, 237);
                     color: white;
+                    font-weight: 800;
                 }
+                
+            }
+
+            .col-social{
+                width: 50%;
+                display: flex;
+                justify-content: end;
+
+
+                
                 h3{
                     color: rgb(38, 143, 234);
-                    padding-top: 5px;
+                    padding-top: 10px;
                     padding-right: 40px;
                 }
                 img{
                     padding-right: 10px;
                     height: 30px;
+                    margin-top: 5px;
                 }
             }
+
         }
     }
     
