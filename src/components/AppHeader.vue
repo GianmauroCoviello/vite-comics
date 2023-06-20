@@ -1,0 +1,48 @@
+<script>
+export default {
+    
+}
+</script>
+<template lang="">
+    <div class="container_header">
+        <div class="row">
+            <div class="col-logo">
+                
+
+            </div>
+            <div class="col-menu">
+                
+            </div>
+        </div>
+        
+    </div>
+</template>
+
+<style lang="scss" scoped>
+    .container_header{
+        height: 100px;
+        background-color: red;
+
+        .row{
+        max-width: 1170px;
+        margin: 0 auto;
+        display: flex;
+
+            .col-logo{
+                background-color: yellow;
+                width: 50%;
+                height: 100px;
+            }
+            .col-menu{
+                background-color: rgb(0, 255, 217);
+                width: 50%;
+                height: 100px;
+            }
+
+
+        
+        }
+    }
+    
+    
+</style>
