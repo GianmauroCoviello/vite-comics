@@ -12,7 +12,7 @@ export default {
             <div class="row">
                 <div class="col-100">
                     <div class="content">
-                        <h1>--Content goes here--</h1>
+                        <h2>--Content goes here--  </h2>
                     </div>
                 </div>
             </div>
@@ -48,7 +48,9 @@ export default {
 <style lang="scss" scoped> // inserito SASS allo style e inserito anche lo scope
     .container{
         background-color: black;
-        height: 100px;
+        padding: 40px 0;
+
+
 
 
         .row{
@@ -64,7 +66,6 @@ export default {
                 color: white;
                 display: flex;
                 align-items: center;
-                height: 100px;
                 
                 
             }

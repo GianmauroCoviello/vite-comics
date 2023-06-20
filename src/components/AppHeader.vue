@@ -1,6 +1,40 @@
 <!-- parte logica (javascript) -->
 <script>
 export default {
+    data(){
+        return{
+            itemMenu: [
+                {
+                    nome: 'CHARACTERS'
+                },
+                {
+                    nome: 'COMICS'
+                },
+                {
+                    nome: 'MOVIES'
+                },
+                {
+                    nome: 'TV'
+                },
+                {
+                    nome: 'COLLECTIBLES'
+                },
+                {
+                    nome: 'VIDEOS'
+                },
+                {
+                    nome: 'FANS'
+                },
+                {
+                    nome: 'NEWS'
+                },
+                {
+                    nome: 'SHOP'
+                },
+            ]
+        }
+    }
+    
     
 }
 </script>
@@ -10,10 +44,14 @@ export default {
     <header>
         <div class="row">
             <div class="col-logo">
+                <img src="../assets/img/dc-logo.png" alt="">
                         
 
             </div>
             <div class="col-menu">
+                <ul>
+                    <li v-for="(item,index) in itemMenu">{{item.nome}}</li>
+                </ul>
                         
             </div>
         </div>
@@ -23,8 +61,8 @@ export default {
 <!-- parte style (css/scss) -->
 <style lang="scss" scoped> // inserito SASS allo style e inserito anche lo scope
     header{
-        height: 100px;
-        background-color: red;
+        padding: 10px 0;
+        
 
         .row{
         max-width: 1170px;
@@ -32,14 +70,33 @@ export default {
         display: flex;
 
             .col-logo{
-                background-color: yellow;
-                width: 50%;
-                height: 100px;
+                width: 40%;
+
+                img{
+                    width: 80px;
+                }
+                
             }
             .col-menu{
-                background-color: rgb(0, 255, 217);
-                width: 50%;
-                height: 100px;
+                width: 60%;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+
+
+                ul{
+                    list-style-type: none;
+                    display: flex;
+                    
+                    li{
+                        padding-right: 20px;
+
+                        &hover{
+                            background-color: aqua;
+                        }
+                        
+                    }
+                }
             }
 
 
