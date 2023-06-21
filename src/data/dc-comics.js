@@ -1,4 +1,4 @@
-let cards = [
+cards = [
     {
         "thumb": "https://www.coverbrowser.com/image/action-comics/1-1.jpg",
         "price": "$19.99",

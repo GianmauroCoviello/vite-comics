@@ -4,14 +4,12 @@ import AppHeader from './components/AppHeader.vue';
 import AppMain from './components/AppMain.vue';
 import AppFooter from './components/AppFooter.vue';
 import AppJumbotron from './components/AppJumbotron.vue';
-import AppListCards from './components/AppListCards.vue';
 export default {
   components:{
     AppHeader,
     AppMain,
     AppFooter,
     AppJumbotron,
-    AppListCards
   }
   
 }
@@ -22,7 +20,6 @@ export default {
     <!-- inserite le componenti -->
     <AppHeader/>
     <AppJumbotron/>
-    <AppListCards/>
     <AppMain/>
     <AppFooter/>
     

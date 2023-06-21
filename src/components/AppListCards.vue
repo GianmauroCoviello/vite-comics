@@ -1,22 +1,30 @@
 <script>
-import productionCards from '../data/dc-comics.js'
+
 export default {
-    data(){
-        return{
-            cards: productionCards
-        }
+    props:{
+        image: String
     }
+    
     
 }
 </script>
 
 <template lang="">
-    <div>
-        
+    <div class="card">
+        <img :src="image" class="img_cards">
         
     </div>
+    
 </template>
 
-<style lang="scss" scoped>
+<style >
+    .img_cards{
+        width: 100%;
+        height: 200px;               
+        object-fit: cover;
+                               
+    }
+        
+    
     
 </style>
