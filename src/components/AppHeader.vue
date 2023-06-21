@@ -3,6 +3,7 @@
 export default {
     data(){
         return{
+            // array di oggetti per le voci di menu
             itemMenu: [
                 {
                     nome: 'CHARACTERS'
@@ -49,7 +50,9 @@ export default {
 
             </div>
             <div class="col-menu">
+
                 <ul>
+                    <!-- ciclaggio dei nomi delle voci di menu -->
                     <li v-for="(item,index) in itemMenu">{{item.nome}}</li>
                 </ul>
                         

@@ -1,9 +1,11 @@
 <!-- parte logica (javascript) -->
 <script>
 export default {
+    // boilerplate di Vue
     data(){
         return{
-            itemCard: [
+            // array di oggetti per le caratteristiche delle voci del menu
+            itemNewMenu: [
                 {   
                     src_image: '../src/assets/img/buy-comics-digital-comics.png',
                     nome: 'DIGITAL COMICS',
@@ -46,32 +48,12 @@ export default {
         </div>
         <div class="container-menu">
             <div class="row-menu">
-                <div class="col-25" v-for="(card,index) in itemCard">
-                    <img :src="card.src_image" alt=""> 
-                    <p>{{card.nome}}</p>
+                <!-- ciclaggio delle voci di menu -->
+                <div class="col-25" v-for="(item,index) in itemNewMenu">
+                    <img :src="item.src_image" alt=""> <!--contiene l'src dell' immagine--> 
+                    <p>{{item.nome}}</p> <!--contiene il nome dell' immagine--> 
                     
                 </div>
-                <!-- <div class="col-25">
-                    <img src="../assets/img/buy-comics-merchandise.png" alt="">
-                    <p>DC MERCHANDISE</p>
-                    
-                </div>
-                <div class="col-25">
-                    <img src="../assets/img/buy-comics-subscriptions.png" alt="">
-                    <p>SUBSCRIPTION</p>
-                    
-                </div>
-                <div class="col-25">
-                    <img src="../assets/img/buy-comics-shop-locator.png" alt="">
-                    <p>COMIC SHOP LOCATOR</p>
-                    
-                </div>
-                <div class="col-25">
-                    <img id="svg-visa" src="../assets/img/buy-dc-power-visa.svg" alt="">
-                    <p>DC POWER VISA</p>
-                    
-                </div>
-                 -->
             </div>
         </div>
     </main>
@@ -111,7 +93,7 @@ export default {
 
     .container-menu{
         background-color: rgb(58, 101, 242);
-        padding: 40px 0;
+        
 
 
 
@@ -127,6 +109,12 @@ export default {
                 color: white;
                 display: flex;
                 padding-left: 10px;
+                padding: 40px 0;
+                justify-content: center;
+
+                &:hover{
+                    background-color: rgb(14, 34, 102);;
+                }
 
 
                 img{

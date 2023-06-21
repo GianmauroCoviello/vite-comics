@@ -15,6 +15,7 @@ export default {
 <!-- parte grafica (html) -->
 <template lang="">
   <div>
+    <!-- inserite le componenti -->
     <AppHeader/>
     <AppMain/>
     <AppFooter/>

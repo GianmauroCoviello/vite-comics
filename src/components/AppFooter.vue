@@ -2,6 +2,7 @@
 <script>
 export default {
     data(){
+        // array per le liste 
         return{
             itemDcComics: ['Characters', 'Comics', 'Movies', 'TV', 'Games', 'Videos', 'News'],
             itemShop: ['Shop DC', 'Shop DC Collectibles'],
@@ -19,13 +20,16 @@ export default {
         <div class="container-top-footer">
             <div class="row">
                 <div class="col">
+                    <!-- liste -->
                     <div class="first-list">
                         <ul>
                             <h2>DC COMICS</h2>
+                            <!-- ciclaggio delle voci della prima lista -->
                             <li v-for="(item,index) in itemDcComics">{{item}}</li>
                         </ul>
                         <ul id="sublist">
                             <h2>SHOP</h2>
+                            <!-- ciclaggio delle voci della sottolista -->
                             <li v-for="(item,index) in itemShop">{{item}}</li>
                            
                             
@@ -34,6 +38,7 @@ export default {
                     <div class="second-list">
                         <ul>
                             <h2>DC </h2>
+                            <!-- ciclaggio delle voci della seconda lista -->
                             <li v-for="(item,index) in itemDC">{{item}}</li>
                         </ul>
 
@@ -41,6 +46,7 @@ export default {
                     <div class="third-list">
                         <ul>
                             <h2>SITES</h2>
+                            <!-- ciclaggio delle voci della terza lista -->
                             <li v-for="(item,index) in itemSites">{{item}}</li>
                         </ul>
 
@@ -58,6 +64,7 @@ export default {
                 </div>
                 <div class="col-social">
                     <h3>FOLLOW US</h3>
+                    <!-- icone social -->
                     <img src="../assets/img/footer-facebook.png" alt="">
                     <img src="../assets/img/footer-periscope.png" alt="">
                     <img src="../assets/img/footer-pinterest.png" alt="">
@@ -101,6 +108,11 @@ export default {
                     padding-right: 40px;
                     color: rgba(243, 243, 243, 0.531);
 
+                    li{
+                        &:hover{
+                            color: white;
+                        }
+                    }
 
                     h2{
                         padding-bottom: 10px;
@@ -157,9 +169,13 @@ export default {
                     padding-right: 40px;
                 }
                 img{
-                    padding-right: 10px;
+                    margin-right: 10px;
                     height: 30px;
                     margin-top: 5px;
+
+                    &:hover{
+                        background-color: white;
+                    }
                 }
             }
 
