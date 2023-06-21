@@ -6,33 +6,54 @@ export default {
             // array di oggetti per le voci di menu
             itemMenu: [
                 {
-                    nome: 'CHARACTERS'
+                    nome: 'CHARACTERS',
+                    active : false,
+                    link: '#'
                 },
                 {
-                    nome: 'COMICS'
+                    nome: 'COMICS',
+                    active : true,
+                    link: '#'
                 },
                 {
-                    nome: 'MOVIES'
+                    nome: 'MOVIES',
+                    active : false,
+                    link: '#'
                 },
                 {
-                    nome: 'TV'
+                    nome: 'TV',
+                    active : false,
+                    link: '#'
                 },
                 {
-                    nome: 'COLLECTIBLES'
+                    nome: 'COLLECTIBLES',
+                    active : false,
+                    link: '#'
                 },
                 {
-                    nome: 'VIDEOS'
+                    nome: 'VIDEOS',
+                    active : false,
+                    link: '#'
                 },
                 {
-                    nome: 'FANS'
+                    nome: 'FANS',
+                    active : false,
+                    link: '#'
                 },
                 {
-                    nome: 'NEWS'
+                    nome: 'NEWS',
+                    active : false,
+                    link: '#'
                 },
                 {
-                    nome: 'SHOP'
+                    nome: 'SHOP',
+                    active : false,
+                    link: '#'
+                    
                 },
+                
             ]
+            
         }
     }
     
@@ -53,7 +74,9 @@ export default {
 
                 <ul>
                     <!-- ciclaggio dei nomi delle voci di menu -->
-                    <li v-for="(item,index) in itemMenu">{{item.nome}}</li>
+                    <li v-for="(item,index) in itemMenu" :class="item.active ? 'active':''" :key="index" >
+                        <a  :href="item.link">{{item.nome}}</a>
+                    </li>
                 </ul>
                         
             </div>
@@ -63,6 +86,9 @@ export default {
 
 <!-- parte style (css/scss) -->
 <style lang="scss" scoped> // inserito SASS allo style e inserito anche lo scope
+    .active{
+        border-bottom: 4px solid blue;
+    }
     header{
         
         
@@ -87,6 +113,7 @@ export default {
                 align-items: center;
                 justify-content: flex-end;
                 
+                
 
 
                 ul{
@@ -96,18 +123,33 @@ export default {
                     
                     
                     
+                    
                     li{
                         margin-right: 20px;
                         display: flex;
                         align-items: center;
+                        // border-bottom: 4px solid rgb(255, 255, 255);
+                        cursor: pointer;
                        
+                        
+
+
+                        a{
+                            text-decoration: none;
+                            color: rgba(0, 0, 0, 0.92);
+
+                            
+                        }
 
                         
-                        
+                        &:hover a{
+                            color: blue;
+                        }
 
                         &:hover{
                             border-bottom: 4px solid blue;
                             cursor: pointer;
+                            
                         }
                         
                     }

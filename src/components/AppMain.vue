@@ -41,7 +41,7 @@ export default {
             <div class="row">
                 <div class="col-100">
                     <div class="content">
-                        <h2>--Content goes here--  </h2>
+                        <h2>--- Content goes here ---</h2>
                     </div>
                 </div>
             </div>
@@ -113,7 +113,8 @@ export default {
                 justify-content: center;
 
                 &:hover{
-                    background-color: rgb(14, 34, 102);;
+                    background-color: rgb(14, 34, 102);
+                    
                 }
 
 
@@ -127,12 +128,7 @@ export default {
                     padding:0 10px ;
                     font-size: 12px;
                 }
-                // #svg-visa{
-                    
-                //     width: 60px;
-
-                // }
-
+                
             }
         }
     
