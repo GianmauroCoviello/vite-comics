@@ -74,6 +74,7 @@ export default {
 
                 <ul>
                     <!-- ciclaggio dei nomi delle voci di menu -->
+                    <!-- inserito anche il biding della classe active all'inrerno dell' li -->
                     <li v-for="(item,index) in itemMenu" :class="item.active ? 'active':''" :key="index" >
                         <a  :href="item.link">{{item.nome}}</a>
                     </li>

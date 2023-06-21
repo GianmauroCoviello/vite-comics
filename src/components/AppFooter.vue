@@ -25,12 +25,12 @@ export default {
                         <ul>
                             <h2>DC COMICS</h2>
                             <!-- ciclaggio delle voci della prima lista -->
-                            <li v-for="(item,index) in itemDcComics">{{item}}</li>
+                            <li v-for="(item,index) in itemDcComics" :key="index">{{item}}</li>
                         </ul>
                         <ul id="sublist">
                             <h2>SHOP</h2>
                             <!-- ciclaggio delle voci della sottolista -->
-                            <li v-for="(item,index) in itemShop">{{item}}</li>
+                            <li v-for="(item,index) in itemShop" :key="index">{{item}}</li>
                            
                             
                         </ul>
@@ -39,7 +39,7 @@ export default {
                         <ul>
                             <h2>DC </h2>
                             <!-- ciclaggio delle voci della seconda lista -->
-                            <li v-for="(item,index) in itemDC">{{item}}</li>
+                            <li v-for="(item,index) in itemDC" :key="index">{{item}}</li>
                         </ul>
 
                     </div>
@@ -47,7 +47,7 @@ export default {
                         <ul>
                             <h2>SITES</h2>
                             <!-- ciclaggio delle voci della terza lista -->
-                            <li v-for="(item,index) in itemSites">{{item}}</li>
+                            <li v-for="(item,index) in itemSites" :key="index">{{item}}</li>
                         </ul>
 
                     </div>

@@ -49,7 +49,7 @@ export default {
         <div class="container-menu">
             <div class="row-menu">
                 <!-- ciclaggio delle voci di menu -->
-                <div class="col-25" v-for="(item,index) in itemNewMenu">
+                <div class="col-25" v-for="(item,index) in itemNewMenu" :key="index">
                     <img :src="item.src_image" alt=""> <!--contiene l'src dell' immagine--> 
                     <p>{{item.nome}}</p> <!--contiene il nome dell' immagine--> 
                     

@@ -4,12 +4,15 @@ export default {
     
 }
 </script>
+
 <!-- componente grafica (html) -->
 <template lang="">
+    <!-- container che conterra il jumbotron -->
     <div class="container-jumbotron">
         
     </div>
 </template>
+
 <!-- componente style (css/scss) -->
 <style lang="scss" scoped>
     .container-jumbotron{
