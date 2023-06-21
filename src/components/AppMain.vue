@@ -1,9 +1,11 @@
 <!-- parte logica (javascript) -->
 <script>
+// importiamo la componente che ci serivirà per creare le cards
 import AppListCards from './AppListCards.vue';
 export default {
     // boilerplate di Vue
     components:{
+        // dichiariamo la componente nel components
         AppListCards
     },
     data(){
@@ -115,15 +117,15 @@ export default {
 <!-- parte grafica (html) -->
 <template lang="" >
     <main>
+        <!-- conterrà le cards -->
         <div class="container">
             <div class="row">
-                <AppListCards v-for="(card,index) in cards" :image="card.thumb" />
-            </div>
-            
+                <!-- componente che viene cicla le cards e ne trsferisce le singole proprietà dell' object tramite il promps -->
+                <AppListCards v-for="(card,index) in cards" :image="card.thumb" :title="card.series" />
+            </div>   
         </div>
-        
-        
-        
+
+        <!-- conterrà il secondo menu con le rispettive img -->
         <div class="container-menu">
             <div class="row-menu">
                 <!-- ciclaggio delle voci di menu -->
@@ -139,6 +141,8 @@ export default {
 
 <!-- parte style (css/scss) -->
 <style lang="scss" scoped> // inserito SASS allo style e inserito anche lo scope
+
+    // UTILITIES CARDS
     .container{
         background-color: rgb(29, 27, 27);
         padding: 30px 0;
@@ -151,9 +155,8 @@ export default {
 
 
             .card{
-                border: 2px solid white;
-                width: calc(100%/6 - 20px);
-                margin: 10px;
+                width: calc(100%/6 - 30px);
+                margin: 15px;
                 color: white;
                 
 
@@ -163,6 +166,7 @@ export default {
         }
     }
 
+    // UTILITIES MENU
     .container-menu{
         background-color: rgb(58, 101, 242);
         

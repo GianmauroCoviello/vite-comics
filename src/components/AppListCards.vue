@@ -1,28 +1,35 @@
+<!-- parte logica (javascript) -->
 <script>
 
 export default {
+    // inseriamo il promps con i nomi delle variabili
     props:{
-        image: String
+        // variabili che rappresentano le singole informazioni dell'array di oggetti indicandone il tipo di dato che viene inserito (string,num ecc..)
+        image: String, 
+        title: String
     }
     
     
 }
 </script>
 
+<!-- parte grafica (html) -->
 <template lang="">
     <div class="card">
-        <img :src="image" class="img_cards">
-        
+        <!-- inseriamo tramite le variabili del promps i dati dell'array d'oggetti -->
+        <img :src="image" class="img_cards"> <!--indica il thumb che indica il link dell'immagine dell'oggetto-->
+        <p><strong>{{title}}</strong></p> <!--indica il series che indica il titolo dell'immagine dell'oggetto-->
     </div>
     
 </template>
 
+<!-- parte style (css,scss ecc...) -->
 <style >
     .img_cards{
         width: 100%;
-        height: 200px;               
+        height: 230px;               
         object-fit: cover;
-                               
+        padding-bottom: 10px;                       
     }
         
     
