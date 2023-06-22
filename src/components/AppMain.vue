@@ -122,7 +122,12 @@ export default {
             <div class="row">
                 <!-- componente che viene cicla le cards e ne trsferisce le singole proprietà dell' object tramite il promps -->
                 <AppListCards v-for="(card,index) in cards" :image="card.thumb" :title="card.series" />
-            </div>   
+                <div class="content-button">
+                    <button>LOAD MORE</button> 
+                </div>
+                
+            </div>
+              
         </div>
 
         <!-- conterrà il secondo menu con le rispettive img -->
@@ -153,6 +158,22 @@ export default {
             margin: 0 auto;
             flex-wrap: wrap;
 
+            .content-badge{
+                width: 100%;
+                
+
+
+                .badge-blue{
+                    width: 20%;
+                    color: white;
+                    padding: 20px;
+
+                    
+
+                }
+
+            }
+
 
             .card{
                 width: calc(100%/6 - 30px);
@@ -161,6 +182,20 @@ export default {
                 
 
                 
+            }
+            .content-button{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                padding-top: 30px;
+
+                button{
+                    padding: 10px 50px;
+                    background-color: rgb(46, 116, 255);
+                    border: none;
+                    color: white;
+                    font-weight: 900;
+                }
             }
 
         }
