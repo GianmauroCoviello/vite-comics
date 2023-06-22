@@ -24,12 +24,18 @@ export default {
 </template>
 
 <!-- parte style (css,scss ecc...) -->
-<style >
+<style  lang="scss" >
     .img_cards{
         width: 100%;
         height: 230px;               
         object-fit: cover;
-        padding-bottom: 10px;                       
+        padding-bottom: 10px;  
+        
+        
+        .img_cards :last-child{
+            width: 10px;
+
+        }
     }
         
     
