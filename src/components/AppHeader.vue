@@ -139,13 +139,13 @@ export default {
                             text-decoration: none;
                             color: rgba(0, 0, 0, 0.92);
 
-                            
+                            &:hover a{
+                            color: blue;
+                            }
                         }
 
                         
-                        &:hover a{
-                            color: blue;
-                        }
+                        
 
                         &:hover{
                             border-bottom: 4px solid blue;
@@ -156,9 +156,6 @@ export default {
                     }
                 }
             }
-
-
-        
         }
     }
     

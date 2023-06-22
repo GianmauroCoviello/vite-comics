@@ -18,7 +18,7 @@ export default {
     <div class="card">
         <!-- inseriamo tramite le variabili del promps i dati dell'array d'oggetti -->
         <img :src="image" class="img_cards"> <!--indica il thumb che indica il link dell'immagine dell'oggetto-->
-        <p>{{title}}</p> <!--indica il series che indica il titolo dell'immagine dell'oggetto-->
+        <p>{{title.toUpperCase()}}</p> <!--indica il series che indica il titolo dell'immagine dell'oggetto-->
     </div>
     
 </template>
